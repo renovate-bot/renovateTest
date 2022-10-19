@@ -1,6 +1,50 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    "group:allNonMajor",
+    ":preserveSemverRanges"    
+  ],
+  "lockFileMaintenance": {
+    "enabled": true
+  },
+  "baseBranches": [
+    "main"
+  ],
+  "ignorePaths": [
+    "/node_modules/",
+    "/test/",
+    "/tests/"
+  ],
+  "packageRules": [
+    {
+      "description": "explicitly enable npm groupname packages public version upgrades",
+      "matchManagers": [
+        "npm"
+      ],
+      "matchCurrentVersion": "!/.*-.*/",
+      "enabled": true
+    },
+    {
+      "description": "first disable all the default maven updates",
+      "matchManagers": [
+        "gradle"
+      ],
+      "enabled": false
+    },
+    {
+      "description": "explicitly enable maven groupname packages",
+      "matchManagers": [
+        "gradle"
+      ],      
+      "enabled": true
+    },
+    {
+      "description": "Disable for global.json",
+      "matchFiles": [
+        "global.json"
+      ],
+      "enabled": false
+    }
   ]
 }
