@@ -49,9 +49,6 @@ processResources.dependsOn("copyFiles")
 
 /***
  * SPRING DEPENDENCY
- */
-PRISMAServiceEnhancedTestSupport()
-
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-actuator'
 	implementation 'org.springframework.boot:spring-boot-starter-data-rest'
@@ -90,8 +87,7 @@ configurations {
 **/
 publishing {
         publications {
-            mavenPublication(MavenPublication) {
-               PRISMAServicePublish()
+            mavenPublication(MavenPublication) {               
                artifact testJar
                 // artifact sourceTestJar
                 // artifact sourceIntegTestJar
