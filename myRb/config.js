@@ -1,5 +1,5 @@
 module.exports = {
-  token: "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",
+  token: "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",
   platform: 'github',
   logLevel: 'debug',
   onboardingConfig: {
