@@ -1,4 +1,4 @@
-name: Renovate
+name: Renovate Github
 on:
   workflow_dispatch:
     inputs:
