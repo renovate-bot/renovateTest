@@ -1,6 +1,60 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ]
+"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+"extends": [
+"config:base",
+"schedule:earlyMondays",
+"group:allNonMajor",
+":preserveSemverRanges"
+],
+"lockFileMaintenance": {
+"enabled": true
+},
+"baseBranches": [
+"main"
+],
+"ignorePaths": [
+"/node_modules/",
+"/test/",
+"/tests/"
+],
+"azureWorkItemId": 531541,
+"platformAutomerge": true,
+"packageRules": [
+{
+"description": "explicitly enable npm groupname",
+"matchManagers": [
+"npm"
+],
+"matchPackagePatterns": [
+"^@companyAA"
+],
+"matchCurrentVersion": "!/.-./",
+"enabled": true
+},
+{
+"description": "first disable all the default maven updates",
+"matchManagers": [
+"gradle"
+],
+"enabled": false
+},
+{
+"description": "explicitly enable maven groupname CompanyAA packages",
+"matchManagers": [
+"gradle"
+],
+"matchPackagePatterns": [
+"^companyAA.cpp"
+],
+"enabled": true
+},
+{
+"groupName": "All Package Dependencies",
+"matchPackagePrefixes": [
+"@companyAA",
+"CompanyAA",
+"companyaa"
+]
+}
+]
 }
