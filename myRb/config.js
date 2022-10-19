@@ -4,9 +4,7 @@ module.exports = {
   onboardingConfig: {
     extends: ['config:base'],
   },
-  repositories: ['raduspa/renovateTest'],  
-  gitAuthor: "rBonWork <rbb@worker.wo>",
-  username: "julienp",
+  repositories: ['raduspa/renovateTest'],
   onboarding: false,
   printConfig: true,
   requireConfig: false,
