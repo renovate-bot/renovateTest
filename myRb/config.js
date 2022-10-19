@@ -1,5 +1,6 @@
 module.exports = {
-  token: "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",
+  token: "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
+",  
   logLevel: 'debug',
   onboardingConfig: {
     extends: ['config:base'],
