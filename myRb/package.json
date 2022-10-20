@@ -12,7 +12,7 @@
         "rbuild": "cross-env SECRET_TOKEN=${{ secrets.RENOVATE_FULL }} npm run build-re2 && npm run build"
     },
     "dependencies": {
-        "renovate": "32.217.0"
+        "renovate": "32.217.0",
         "cross-env": "7.0.3"
     },
     "license": "ISC"
