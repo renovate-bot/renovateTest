@@ -1,5 +1,6 @@
+let githubToken = process.env.RENOVATE_FULL
 module.exports = {
-  token: "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",
+  token: githubToken,
   platform: 'github',
   logLevel: 'debug',
   onboardingConfig: {
