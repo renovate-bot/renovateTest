@@ -11,14 +11,14 @@ on:
         - info
         - warning
         - debug
+env:
+  SET SECRET_TOKEN: ${{ secrets.RENOVATE_FULL }}
 jobs:
   renovate:
     runs-on: windows-2019
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
-      - name: set env
-        run: SET SECRET_TOKEN=${{ secrets.RENOVATE_FULL }}
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.5.1
         with:
