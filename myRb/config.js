@@ -11,6 +11,6 @@ module.exports = {
   gitAuthor: "Julien <julien@caffeine.lu>",
   username: "julienp",
   onboarding: false,
-  requireConfig=false,
+  requireConfig: false,
   printConfig: true,  
 };
