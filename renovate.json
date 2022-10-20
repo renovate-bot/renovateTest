@@ -26,13 +26,6 @@
       "enabled": true
     },
     {
-      "description": "first disable all the default maven updates",
-      "matchManagers": [
-        "gradle"
-      ],
-      "enabled": false
-    },
-    {
       "description": "explicitly enable maven groupname packages",
       "matchManagers": [
         "gradle"
