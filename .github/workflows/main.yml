@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.0.0
+      - name: set env
+        run: SET SECRET_TOKEN=${{ RENOVATE_FULL }}
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.5.1
         with:
