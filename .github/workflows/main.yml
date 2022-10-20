@@ -12,7 +12,7 @@ on:
         - warning
         - debug
 env:
-  SET SECRET_TOKEN: ${{ secrets.RENOVATE_FULL }}
+  RENOVATE_TOKEN: ${{ secrets.RENOVATE_TOKEN }}
 jobs:
   renovate:
     runs-on: windows-2019
