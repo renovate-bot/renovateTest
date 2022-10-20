@@ -1,6 +1,6 @@
 let githubToken = process.env.SECRET_TOKEN
 module.exports = {
-  token: githubToken,
+  # token: githubToken,
   platform: 'github',
   logLevel: 'debug',
   onboardingConfig: {
