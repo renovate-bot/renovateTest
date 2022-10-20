@@ -3,7 +3,7 @@ module.exports = {
   platform: 'github',
   logLevel: 'debug',
   onboardingConfig: {
-    extends: ['config:base'],
+    extends: ['config:base', ":dependencyDashboardApproval"],
   },
   repositories: ['raduspa/renovateTest'],
   renovateFork: true,
