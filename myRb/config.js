@@ -1,7 +1,9 @@
-{
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base",
-    ":disableDependencyDashboard"
-  ]
-}
+module.exports = {
+  platform: 'github',
+  onboardingConfig: {
+    extends: ['config:base'],
+  },
+  repositories: ['raduspa/renovateTest'],
+  requireConfig: "optional",
+  onboarding: false,
+};
