@@ -3,7 +3,7 @@ module.exports = {
   platform: 'github',
   logLevel: 'debug',
   onboardingConfig: {
-    extends: ['config:base', ":dependencyDashboardApproval"],
+    extends: ['config:base'],
   },
   repositories: ['raduspa/renovateTest'],
   enabledManagers: [ "gradle", "npm" ],
@@ -11,6 +11,5 @@ module.exports = {
   gitAuthor: "Julien <julien@caffeine.lu>",
   username: "julienp",
   onboarding: false,
-  printConfig: true,
-  requireConfig: false,
+  printConfig: true,  
 };
