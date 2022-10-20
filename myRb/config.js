@@ -6,4 +6,5 @@ module.exports = {
   repositories: ['raduspa/renovateTest'],
   requireConfig: "optional",
   onboarding: false,
+  renovateFork: true,
 };
