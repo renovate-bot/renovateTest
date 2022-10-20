@@ -6,6 +6,7 @@ module.exports = {
     extends: ['config:base', ":dependencyDashboardApproval"],
   },
   repositories: ['raduspa/renovateTest'],
+  enabledManagers: [ "gradle", "npm" ],
   renovateFork: true,
   gitAuthor: "Julien <julien@caffeine.lu>",
   username: "julienp",
