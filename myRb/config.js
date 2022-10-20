@@ -1,4 +1,4 @@
-let githubToken = process.env.RENOVATE_FULL
+let githubToken = process.env.SECRET_TOKEN
 module.exports = {
   token: githubToken,
   platform: 'github',
